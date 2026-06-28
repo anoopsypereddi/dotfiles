@@ -1,0 +1,15 @@
+# Minimal starship prompt: directory, git branch + status, command duration.
+add_newline = true
+
+[directory]
+truncation_length = 3
+truncate_to_repo = true
+
+[git_branch]
+symbol = " "
+
+[git_status]
+style = "yellow"
+
+[cmd_duration]
+min_time = 2000
