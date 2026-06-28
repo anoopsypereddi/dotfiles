@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.sample
+.secrets
+*.local
+.ssh/id_*
+!.ssh/*.pub
+*.pem
+.*_history
+.claude/settings.local.json

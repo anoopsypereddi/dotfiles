@@ -1,0 +1,30 @@
+# Identity is intentionally NOT set here — this repo is shared/forkable.
+# Set it in ~/.gitconfig-work / ~/.gitconfig-personal (see includeIf below)
+# or in a local, untracked ~/.gitconfig.local.
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
+[push]
+	autoSetupRemote = true
+[fetch]
+	prune = true
+[rebase]
+	autosquash = true
+	autostash = true
+[merge]
+	conflictstyle = zdiff3
+[diff]
+	algorithm = histogram
+[core]
+	excludesfile = ~/.gitignore_global
+[alias]
+	s = status -sb
+	lg = log --graph --oneline --decorate --all
+	amend = commit --amend --no-edit
+	undo = reset --soft HEAD~1
+# Work/personal identity by directory (trailing slash is required)
+[includeIf "gitdir:~/work/"]
+	path = ~/.gitconfig-work
+[includeIf "gitdir:~/personal/"]
+	path = ~/.gitconfig-personal

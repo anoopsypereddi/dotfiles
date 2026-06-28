@@ -1,0 +1,8 @@
+brew "tmux"
+brew "git"
+brew "starship"
+brew "fzf"
+brew "ripgrep"
+brew "eza"
+brew "bat"
+brew "zoxide"
